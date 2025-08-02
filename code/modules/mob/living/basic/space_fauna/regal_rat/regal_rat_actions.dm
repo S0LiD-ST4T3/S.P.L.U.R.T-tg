@@ -64,7 +64,8 @@
 	SIGNAL_HANDLER
 	set_domain_active(FALSE)
 
-/// Create gas and spawn mess
+/// Create gas and spawn mess.
+/// Cultivator's addendum, DO NOT EVER, EVER, EVER ADD SLIPPERY SHIT TO THE RAT AGAIN, OR I WILL CUT YOUR NUTS OFF AND FEED THEM TO YOU!
 /datum/action/cooldown/mob_cooldown/domain/proc/spread_domain()
 	if (!is_active || !COOLDOWN_FINISHED(src, mess_cooldown) || !owner)
 		return
@@ -81,7 +82,7 @@
 		if (9)
 			new /obj/effect/decal/cleanable/vomit/old(mess_location)
 		if (10)
-			new /obj/effect/decal/cleanable/blood/oil/slippery(mess_location)
+			new /obj/effect/decal/cleanable/blood(mess_location)
 		else
 			new /obj/effect/decal/cleanable/dirt(mess_location)
 
